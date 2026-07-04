@@ -1,0 +1,11 @@
+{
+	"name": "sheep_and_sheep",
+	"short_name": "sheep_and_sheep",
+	"description": "10000 - Add JS Event\n10101 - fix 25 level, add 60 levels (31-90)\n10103 - fix next level over 30\n10201 - add reward dop set block\n10301 - fix size bg sound and spriteFone, add bonuses undo, hint, mix\n10311 - fix sound btn\n10323 - Minor changes\n13101 - fix 31 levels",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "portrait",
+	"background_color": "#ffffff",
+	"icons": [],
+	"screenshots": []
+}

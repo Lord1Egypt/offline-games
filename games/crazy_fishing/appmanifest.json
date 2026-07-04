@@ -1,0 +1,11 @@
+{
+	"name": "crazy_fishing",
+	"short_name": "crazy_fishing",
+	"description": "10001 - Add JS events\n10002 - Fis event is on IOS\n10003 - Update Icon",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "any",
+	"background_color": "#ffffff",
+	"icons": [],
+	"screenshots": []
+}

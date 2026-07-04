@@ -1,0 +1,41 @@
+{
+	"name": "Golf Day",
+	"short_name": "Golf Day",
+	"description": "11000 - Add JSevent\n11001 - Made rounds 5,10,12,14,15,21,23,24,26 easier\n11001 - 8,18,27 were empty, made a new level design\n11002 - fix bax \"all rounds were available\"\n11003 - set Completed rounds 22\n11004 - Renamed saves to Local Storage",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "portrait",
+	"background_color": "#ffffff",
+	"icons": [
+		{
+			"src": "icons/icon-16.png",
+			"sizes": "16x16",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-32.png",
+			"sizes": "32x32",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-64.png",
+			"sizes": "64x64",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-128.png",
+			"sizes": "128x128",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-256.png",
+			"sizes": "256x256",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-512.png",
+			"sizes": "512x512",
+			"type": "image/png"
+		}
+	]
+}

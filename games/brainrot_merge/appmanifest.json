@@ -1,0 +1,11 @@
+{
+	"name": "brainrot_merge",
+	"short_name": "brainrot_merge",
+	"description": "10000 - add JS Event.\n15000 - New img\n15006 - Fix Ads popup\n15008 - Compressed images\n15108 - replaced the last character of Tung Tung Sagura with Frigo Camelo.",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "portrait",
+	"background_color": "#000000",
+	"icons": [],
+	"screenshots": []
+}

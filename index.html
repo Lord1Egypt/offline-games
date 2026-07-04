@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>99 Games — Free HTML5 Games Collection</title>
+<meta name="description" content="99 free HTML5 games. Play anywhere, anytime, no internet needed. Chess, Sudoku, Solitaire, UNO, and more!">
+<meta property="og:title" content="99 Games — Free HTML5 Games">
+<meta property="og:description" content="99 free HTML5 games. No internet needed.">
+<meta property="og:image" content="og-image.png">
+<meta name="theme-color" content="#0f0f1a">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎮</text></svg>">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+:root {
+  --bg: #08080f;
+  --surface: #111122;
+  --surface2: #1a1a30;
+  --surface3: #222244;
+  --accent: #ff3366;
+  --accent2: #ff6b35;
+  --accent3: #7c3aed;
+  --text: #f0f0f5;
+  --text2: #8888aa;
+  --text3: #555577;
+  --glow: rgba(255, 51, 102, 0.3);
+  --radius: 16px;
+  --radius-sm: 10px;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* ─── Background ─── */
+.bg-glow {
+  position: fixed;
+  top: -50vh;
+  left: -50vw;
+  width: 200vw;
+  height: 200vh;
+  background: radial-gradient(ellipse at 30% 20%, rgba(255,51,102,0.05) 0%, transparent 50%),
+              radial-gradient(ellipse at 70% 80%, rgba(124,58,237,0.05) 0%, transparent 50%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* ─── Hero ─── */
+.hero {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding: 60px 20px 40px;
+  overflow: hidden;
+}
+.hero::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--accent), transparent);
+}
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 16px;
+  background: rgba(255,51,102,0.1);
+  border: 1px solid rgba(255,51,102,0.2);
+  border-radius: 50px;
+  font-size: 0.8em;
+  color: var(--accent);
+  font-weight: 500;
+  margin-bottom: 20px;
+  letter-spacing: 0.5px;
+}
+
+.hero h1 {
+  font-size: clamp(2.5em, 7vw, 5em);
+  font-weight: 900;
+  letter-spacing: -2px;
+  line-height: 1.05;
+  margin-bottom: 16px;
+}
+.hero h1 .grad {
+  background: linear-gradient(135deg, var(--accent), var(--accent2), var(--accent3));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.hero p {
+  color: var(--text2);
+  font-size: clamp(1em, 2vw, 1.2em);
+  max-width: 500px;
+  margin: 0 auto 24px;
+  line-height: 1.6;
+}
+
+.hero-stats {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+.hero-stats .stat {
+  text-align: center;
+}
+.hero-stats .stat .num {
+  font-size: 1.8em;
+  font-weight: 800;
+  background: linear-gradient(135deg, var(--accent), var(--accent3));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.hero-stats .stat .label {
+  font-size: 0.8em;
+  color: var(--text3);
+  font-weight: 500;
+  margin-top: 2px;
+}
+
+/* ─── Controls ─── */
+.controls {
+  position: relative;
+  z-index: 1;
+  max-width: 1000px;
+  margin: 30px auto 20px;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.search-wrap {
+  position: relative;
+  width: 100%;
+}
+.search-wrap input {
+  width: 100%;
+  padding: 16px 20px 16px 52px;
+  border: 1px solid var(--surface3);
+  border-radius: var(--radius);
+  background: var(--surface);
+  color: var(--text);
+  font-size: 1em;
+  font-family: inherit;
+  outline: none;
+  transition: all 0.3s;
+}
+.search-wrap input:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 30px var(--glow);
+}
+.search-wrap input::placeholder { color: var(--text3); }
+.search-icon {
+  position: absolute;
+  left: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.2em;
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+.categories {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.cat-btn {
+  padding: 8px 18px;
+  border: 1px solid var(--surface3);
+  border-radius: 50px;
+  background: var(--surface);
+  color: var(--text2);
+  cursor: pointer;
+  transition: all 0.25s;
+  font-size: 0.85em;
+  font-family: inherit;
+  font-weight: 500;
+  white-space: nowrap;
+}
+.cat-btn:hover {
+  background: var(--surface2);
+  color: var(--text);
+  border-color: var(--accent);
+}
+.cat-btn.active {
+  background: linear-gradient(135deg, var(--accent), var(--accent3));
+  color: white;
+  border-color: transparent;
+  box-shadow: 0 4px 20px var(--glow);
+}
+
+/* ─── Games Grid ─── */
+.games-section {
+  position: relative;
+  z-index: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px 20px 60px;
+}
+
+.games-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(165px, 1fr));
+  gap: 16px;
+}
+
+.game-card {
+  position: relative;
+  background: var(--surface);
+  border-radius: var(--radius);
+  overflow: hidden;
+  transition: all 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--text);
+  border: 1px solid var(--surface3);
+  opacity: 0;
+  animation: cardIn 0.5s ease forwards;
+}
+.game-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  border-color: var(--accent);
+  box-shadow: 0 20px 60px rgba(0,0,0,0.5), 0 0 40px var(--glow);
+}
+
+.game-card .thumb {
+  width: 100%;
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3.5em;
+  background: linear-gradient(135deg, var(--surface2), var(--surface));
+  position: relative;
+  overflow: hidden;
+}
+.game-card .thumb::after {
+  content: '▶';
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.6em;
+  color: white;
+  background: rgba(0,0,0,0.3);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.game-card:hover .thumb::after { opacity: 1; }
+
+.game-card .info {
+  padding: 12px 14px 14px;
+}
+.game-card .info h3 {
+  font-size: 0.85em;
+  font-weight: 600;
+  margin-bottom: 6px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.game-card .info .cat-tag {
+  display: inline-block;
+  font-size: 0.65em;
+  font-weight: 500;
+  padding: 3px 10px;
+  border-radius: 50px;
+  background: rgba(255,51,102,0.1);
+  color: var(--accent);
+  letter-spacing: 0.3px;
+}
+
+/* ─── Empty ─── */
+.empty-state {
+  display: none;
+  text-align: center;
+  padding: 80px 20px;
+  color: var(--text3);
+}
+.empty-state .emoji { font-size: 4em; margin-bottom: 20px; }
+.empty-state h3 { font-size: 1.3em; color: var(--text2); margin-bottom: 8px; }
+.empty-state p { font-size: 0.95em; }
+
+/* ─── Animations ─── */
+@keyframes cardIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ─── Footer ─── */
+footer {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding: 40px 20px;
+  border-top: 1px solid var(--surface3);
+  color: var(--text3);
+  font-size: 0.85em;
+}
+footer a { color: var(--accent); text-decoration: none; }
+footer a:hover { text-decoration: underline; }
+
+/* ─── Responsive ─── */
+@media (max-width: 700px) {
+  .hero { padding: 40px 16px 30px; }
+  .hero-stats { gap: 24px; }
+  .games-grid { grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 12px; }
+  .game-card .thumb { font-size: 2.8em; }
+}
+@media (max-width: 400px) {
+  .games-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
+  .game-card .info { padding: 10px; }
+  .game-card .info h3 { font-size: 0.78em; }
+}
+</style>
+</head>
+<body>
+
+<div class="bg-glow"></div>
+
+<section class="hero">
+  <div class="hero-badge">🎮 <span>100% Offline &bull; No Ads &bull; Free</span></div>
+  <h1><span class="grad">99 Games</span></h1>
+  <p>Premium HTML5 games collection.<br>Play anywhere, anytime — zero internet needed.</p>
+  <div class="hero-stats" id="heroStats">
+    <div class="stat"><div class="num" id="statGames">—</div><div class="label">Games</div></div>
+    <div class="stat"><div class="num" id="statCategories">—</div><div class="label">Categories</div></div>
+    <div class="stat"><div class="num" id="statSize">—</div><div class="label">Total Size</div></div>
+  </div>
+</section>
+
+<div class="controls">
+  <div class="search-wrap">
+    <span class="search-icon">🔍</span>
+    <input type="text" id="searchInput" placeholder="Search games... (e.g. chess, merge, puzzle)" autocomplete="off">
+  </div>
+  <div class="categories" id="categoriesWrap">
+    <button class="cat-btn active" data-cat="all">🎯 All</button>
+  </div>
+</div>
+
+<section class="games-section">
+  <div class="games-grid" id="gamesGrid"></div>
+  <div class="empty-state" id="emptyState">
+    <div class="emoji">🔍</div>
+    <h3>No games found</h3>
+    <p>Try a different search term or category</p>
+  </div>
+</section>
+
+<footer>
+  <p>🎮 <strong>99 Games</strong> &mdash; Free HTML5 Collection &bull; Made with ❤️</p>
+  <p style="margin-top:6px;font-size:0.85em;">
+    <a href="https://github.com/Lord1Egypt/offline-games" target="_blank">GitHub</a>
+  </p>
+</footer>
+
+<script>
+// ═══════════════════════════════════════
+//  GAME DATA
+// ═══════════════════════════════════════
+
+const CATEGORIES = {
+  // Board & Card
+  chess: '♟️', checkers: '♟️', dominoes: '🀄', ludo: '🎲', spades: '♠️',
+  uno: '🃏', uno_vertical: '🃏', skip_card: '🃏',
+  solitaire: '♠️', solitaire_associations: '♠️', solitaire_classic: '♠️', solitaire_spider: '♠️',
+  // Puzzle
+  sudoku: '🧩', nonogram: '🧩', slider_puzzle: '🧩', jigsaw_puzzle: '🧩',
+  tile_master_match: '🧩', cryptogram: '🧩',
+  // Word
+  word_connect: '📝', wordly: '📖', word_search_hidden_2: '🔍',
+  // Number
+  twenty48: '🔢', link_2248: '🔢', math: '📐', number_tiles: '🔢',
+  // Merge
+  block_merge: '🔄', dice_merge: '🔄', drop_n_merge: '🔄', merge_bubble: '🔄',
+  merge_cards: '🔄', merge_dice: '🔄', merge_fruits: '🔄', merge_numbers: '🔄',
+  merge_shooter: '🔄', brainrot_merge: '🔄', coin_sort: '🔄', cap_sort: '🔄',
+  // Shooter
+  bubble_shooter: '🎯', shooting_balls: '🎯', mr_bullet: '🎯',
+  // Action
+  zombie_tower_defence: '🧟', tanks_battle: '🪖', tiny_crash_fighters: '💥',
+  // Creative
+  coloring_book: '🎨', color_by_number: '🎨', color_cannon: '🎨', color_maze: '🎨',
+  city_builder: '🏙️', house_painter: '🏠', balloons_creator: '🎈',
+  // Casual
+  among_us: '👾', head_soccer: '⚽', fruit_king: '👑', apple_worm: '🐛',
+  save_the_doge: '🐕', crazy_fishing: '🎣', geometry_rash: '⬡',
+  happy_filled_glass: '🥤', happy_filled_glass_2: '🥤', happy_filled_glass_4: '🥤',
+  spill_wine: '🍷', drop_it: '📦', collect_em_all: '⭐',
+  // Sports
+  golf_day: '⛳', pool_8_pro: '🎱', pool_shoot: '🎱', rope_bowling: '🎳',
+  // Arcade
+  pinball_rush: '🕹️', brick_breaker_retro: '🧱', knife_hit: '🔪',
+  move_the_pin_2: '📌', screw_pin: '🔩', pao_pao: '💣',
+  // Classic
+  tic_tac_toe: '❌', mahjong_classic: '🀄', mahjong_deluxe: '🀄',
+  water_sort: '💧', zumba: '💃',
+  // Strategy
+  route_digger: '🚧', how_to_loot: '💰', nuts_and_bolts: '🔧',
+  nuts_and_bolts_sort: '🔧', block_blast: '💥', block_tetris: '🧊',
+  tower_boom: '💣', trap_path: '🪤', turn_light: '💡',
+  // Others
+  thread_match: '🧵', onet_fish: '🐟', sheep_and_sheep: '🐑',
+  pipe_way: '🔧', draw_parking: '🚗', master_fall_down: '📉',
+  hexadice: '🎲', find_number: '🔢', find_pair: '🔍', fruits_match_2: '🍎',
+  indiara: '🏃', royale_blast: '💥',
+};
+
+const CAT_NAMES = {
+  '♟️': 'Board & Card', '🀄': 'Board & Card', '🎲': 'Board & Card', '♠️': 'Board & Card', '🃏': 'Board & Card',
+  '🧩': 'Puzzle', '📝': 'Word', '📖': 'Word', '🔍': 'Word',
+  '🔢': 'Numbers', '📐': 'Numbers',
+  '🔄': 'Merge', '🎯': 'Shooter',
+  '🧟': 'Action', '🪖': 'Action', '💥': 'Action',
+  '🎨': 'Creative', '🏙️': 'Creative', '🎈': 'Creative',
+  '👾': 'Casual', '⚽': 'Casual', '🐛': 'Casual', '🥤': 'Casual',
+  '⛳': 'Sports', '🎱': 'Sports', '🎳': 'Sports',
+  '🕹️': 'Arcade', '🧱': 'Arcade', '📌': 'Arcade',
+  '❌': 'Classic',
+  '💧': 'Puzzle',
+  '🚧': 'Strategy', '💰': 'Strategy', '🔧': 'Strategy', '💣': 'Strategy',
+  '🧵': 'Puzzle', '🐟': 'Casual', '🐑': 'Casual',
+  '🚗': 'Puzzle', '📉': 'Arcade', '🏃': 'Action', '💡': 'Puzzle',
+  '💃': 'Arcade',
+};
+
+function getCategory(gameId) {
+  const icon = CATEGORIES[gameId];
+  return icon ? (CAT_NAMES[icon] || 'Casual') : 'Casual';
+}
+
+function getIcon(gameId) {
+  return CATEGORIES[gameId] || '🎮';
+}
+
+function formatName(id) {
+  return id
+    .replace(/_/g, ' ')
+    .replace(/\b\w/g, c => c.toUpperCase())
+    .replace(/\b(And|Of|The|A|An)\b/gi, c => c.toLowerCase())
+    .replace(/\b(\d+)\b/g, m => m);
+}
+
+// ═══════════════════════════════════════
+//  APP
+// ═══════════════════════════════════════
+
+let allGames = [];
+let filteredGames = [];
+let currentCategory = 'all';
+let currentSearch = '';
+
+async function init() {
+  try {
+    const res = await fetch('games/index.json');
+    const data = await res.json();
+    allGames = data.games.map(g => ({
+      ...g,
+      name: g.name || formatName(g.id),
+      icon: getIcon(g.id),
+      category: getCategory(g.id),
+    }));
+
+    // Stats
+    document.getElementById('statGames').textContent = allGames.length;
+    document.getElementById('statSize').textContent = data.total_size_mb ? Math.round(data.total_size_mb) + ' MB' : '—';
+
+    // Categories
+    const cats = [...new Set(allGames.map(g => g.category))].sort();
+    const wrap = document.getElementById('categoriesWrap');
+    cats.forEach(c => {
+      const btn = document.createElement('button');
+      btn.className = 'cat-btn';
+      btn.dataset.cat = c;
+      btn.textContent = c;
+      btn.onclick = () => setCategory(c);
+      wrap.appendChild(btn);
+    });
+    document.getElementById('statCategories').textContent = cats.length;
+
+    // Search
+    document.getElementById('searchInput').addEventListener('input', e => {
+      currentSearch = e.target.value.toLowerCase();
+      applyFilters();
+    });
+
+    render(allGames);
+  } catch(e) {
+    console.error('Failed to load games:', e);
+    document.getElementById('statGames').textContent = '99';
+    document.getElementById('statCategories').textContent = '—';
+    document.getElementById('statSize').textContent = '—';
+  }
+}
+
+function render(games) {
+  const grid = document.getElementById('gamesGrid');
+  grid.innerHTML = '';
+  games.forEach((g, i) => {
+    const card = document.createElement('a');
+    card.className = 'game-card';
+    card.href = `games/${g.id}/`;
+    card.target = '_blank';
+    card.style.animationDelay = `${i * 25}ms`;
+    card.innerHTML = `
+      <div class="thumb">${g.icon}</div>
+      <div class="info">
+        <h3 title="${g.name}">${g.name}</h3>
+        <span class="cat-tag">${g.category}</span>
+      </div>
+    `;
+    grid.appendChild(card);
+  });
+  document.getElementById('emptyState').style.display = games.length ? 'none' : 'block';
+}
+
+function setCategory(cat) {
+  currentCategory = cat;
+  document.querySelectorAll('.cat-btn').forEach(b => {
+    b.classList.toggle('active', b.dataset.cat === cat);
+  });
+  applyFilters();
+}
+
+function applyFilters() {
+  const filtered = allGames.filter(g => {
+    const matchCat = currentCategory === 'all' || g.category === currentCategory;
+    const matchSearch = !currentSearch ||
+      g.id.toLowerCase().includes(currentSearch) ||
+      g.name.toLowerCase().includes(currentSearch) ||
+      g.category.toLowerCase().includes(currentSearch);
+    return matchCat && matchSearch;
+  });
+  render(filtered);
+}
+
+init();
+</script>
+</body>
+</html>

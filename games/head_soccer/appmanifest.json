@@ -1,0 +1,11 @@
+{
+	"name": "head_soccer",
+	"short_name": "head_soccer",
+	"description": "10001 - Add JS event\n10002 - Fix is on IOS\n10003 - Fix physics\n10004 - Added training, added super strike, adjusted enemy AI, added saving, optimized graphics and conditions\n10005 - Add global sound\n20001 - Update version",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "any",
+	"background_color": "#ffffff",
+	"icons": [],
+	"screenshots": []
+}

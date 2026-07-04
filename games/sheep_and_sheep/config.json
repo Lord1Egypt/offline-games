@@ -1,0 +1,98 @@
+{
+	"level_unlock" :	1,
+	"level_current" : 	1,
+	"level_totals" : 	91,
+	"for_blocks":		1,
+	"levels" : {
+		"1" : {
+			"difficulty_level" : 20
+		},
+		"2" : {
+			"difficulty_level" : 19
+		},
+		"3" : {
+			"difficulty_level" : 18
+		},
+		"4" : {
+			"difficulty_level" : 17
+		},
+		"5" : {
+			"difficulty_level" : 16
+		},
+		"6" : {
+			"difficulty_level" : 15
+		},
+		"7" : {
+			"difficulty_level" : 14
+		},
+		"8" : {
+			"difficulty_level" : 13
+		},
+		"9" : {
+			"difficulty_level" : 12
+		},
+		"10" : {
+			"difficulty_level" : 12
+		},
+		"11" : {
+			"difficulty_level" : 11
+		},
+		"12" : {
+			"difficulty_level" : 11
+		},
+		"13" : {
+			"difficulty_level" : 10
+		},
+		"14" : {
+			"difficulty_level" : 10
+		},
+		"15" : {
+			"difficulty_level" : 10
+		},
+		"16" : {
+			"difficulty_level" : 9
+		},
+		"17" : {
+			"difficulty_level" : 9
+		},
+		"18" : {
+			"difficulty_level" : 9
+		},
+		"19" : {
+			"difficulty_level" : 8
+		},
+		"20" : {
+			"difficulty_level" : 8
+		},
+		"21" : {
+			"difficulty_level" : 7
+		},
+		"22" : {
+			"difficulty_level" : 7
+		},
+		"23" : {
+			"difficulty_level" : 6
+		},
+		"24" : {
+			"difficulty_level" : 6
+		},
+		"25" : {
+			"difficulty_level" : 5
+		},
+		"26" : {
+			"difficulty_level" : 5
+		},
+		"27" : {
+			"difficulty_level" : 4
+		},
+		"28" : {
+			"difficulty_level" : 4
+		},
+		"29" : {
+			"difficulty_level" : 3
+		},
+		"30" : {
+			"difficulty_level" : 3
+		}
+	}
+}

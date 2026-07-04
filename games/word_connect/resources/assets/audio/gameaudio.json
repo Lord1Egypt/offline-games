@@ -1,0 +1,127 @@
+{
+  "resources": [
+    "gameaudio.ogg"
+  ],
+  "spritemap": {
+    "add_coins": {
+      "start": 0,
+      "end": 1.6384807256235827,
+      "loop": false
+    },
+    "bonus_word": {
+      "start": 3,
+      "end": 4.56734693877551,
+      "loop": false
+    },
+    "box_open": {
+      "start": 6,
+      "end": 7.488979591836735,
+      "loop": false
+    },
+    "click": {
+      "start": 9,
+      "end": 9.083333333333334,
+      "loop": false
+    },
+    "correct_word": {
+      "start": 11,
+      "end": 13,
+      "loop": false
+    },
+    "hint": {
+      "start": 14,
+      "end": 15.959183673469388,
+      "loop": false
+    },
+    "level_end": {
+      "start": 17,
+      "end": 19.246530612244896,
+      "loop": false
+    },
+    "select_1": {
+      "start": 21,
+      "end": 21.81251700680272,
+      "loop": false
+    },
+    "select_2": {
+      "start": 23,
+      "end": 23.81251700680272,
+      "loop": false
+    },
+    "select_3": {
+      "start": 25,
+      "end": 25.81251700680272,
+      "loop": false
+    },
+    "select_4": {
+      "start": 27,
+      "end": 27.81251700680272,
+      "loop": false
+    },
+    "select_5": {
+      "start": 29,
+      "end": 29.81251700680272,
+      "loop": false
+    },
+    "select_6": {
+      "start": 31,
+      "end": 31.81251700680272,
+      "loop": false
+    },
+    "select_7": {
+      "start": 33,
+      "end": 33.81251700680272,
+      "loop": false
+    },
+    "select_8": {
+      "start": 35,
+      "end": 35.81251700680272,
+      "loop": false
+    },
+    "shuffle": {
+      "start": 37,
+      "end": 37.96659863945578,
+      "loop": false
+    },
+    "star": {
+      "start": 39,
+      "end": 39.80755102040816,
+      "loop": false
+    },
+    "tooltip": {
+      "start": 41,
+      "end": 41.182857142857145,
+      "loop": false
+    },
+    "wrong_word": {
+      "start": 43,
+      "end": 45.16816326530612,
+      "loop": false
+    },
+    "coins_given": {
+      "start": 47,
+      "end": 49.27265306122449,
+      "loop": false
+    },
+    "daily_reward": {
+      "start": 51,
+      "end": 52.645714285714284,
+      "loop": false
+    },
+    "duplicate_word": {
+      "start": 54,
+      "end": 56.196009070294785,
+      "loop": false
+    },
+    "gift": {
+      "start": 58,
+      "end": 60.12401360544218,
+      "loop": false
+    },
+    "wheel": {
+      "start": 62,
+      "end": 62.08521541950113,
+      "loop": false
+    }
+  }
+}

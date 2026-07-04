@@ -1,0 +1,42 @@
+{
+	"name": "NutsAndBolts",
+	"short_name": "NutsAndBolts",
+	"description": "11000 - Add JSevent\n11001 - Delete mobile Advert\n11002 - Fixed a bug with advertising not working for bonuses\n11100 - Fix Data from local\n11101 - Update JSevetns_str/int\n11201 - reduced the size of the music\n11202 - The 9th level has been rebuilt so that it can be completed",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "portrait",
+	"background_color": "#ffffff",
+	"icons": [
+		{
+			"src": "icons/icon-16.png",
+			"sizes": "16x16",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-32.png",
+			"sizes": "32x32",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-64.png",
+			"sizes": "64x64",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-128.png",
+			"sizes": "128x128",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-256.png",
+			"sizes": "256x256",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-512.png",
+			"sizes": "512x512",
+			"type": "image/png"
+		}
+	],
+	"screenshots": []
+}

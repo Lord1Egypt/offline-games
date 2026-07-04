@@ -1,0 +1,134 @@
+{
+  "frames": {
+    "confirmMenu1.png": {
+      "frame": {
+        "x": 1,
+        "y": 1,
+        "w": 1070,
+        "h": 725
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 1070,
+        "h": 725
+      },
+      "sourceSize": {
+        "w": 1070,
+        "h": 725
+      }
+    },
+    "confirmMenu2.png": {
+      "frame": {
+        "x": 1,
+        "y": 728,
+        "w": 1070,
+        "h": 355
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 1070,
+        "h": 355
+      },
+      "sourceSize": {
+        "w": 1070,
+        "h": 355
+      }
+    },
+    "menuRect.png": {
+      "frame": {
+        "x": 1073,
+        "y": 1,
+        "w": 540,
+        "h": 545
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 545
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 545
+      }
+    },
+    "notificationRect.png": {
+      "frame": {
+        "x": 1073,
+        "y": 548,
+        "w": 700,
+        "h": 150
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 700,
+        "h": 150
+      },
+      "sourceSize": {
+        "w": 700,
+        "h": 150
+      }
+    },
+    "roundedRect.png": {
+      "frame": {
+        "x": 1615,
+        "y": 1,
+        "w": 100,
+        "h": 100
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 100,
+        "h": 100
+      },
+      "sourceSize": {
+        "w": 100,
+        "h": 100
+      }
+    },
+    "shadowRect.png": {
+      "frame": {
+        "x": 1073,
+        "y": 700,
+        "w": 220,
+        "h": 220
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 220,
+        "h": 220
+      },
+      "sourceSize": {
+        "w": 220,
+        "h": 220
+      }
+    }
+  },
+  "meta": {
+    "version": "1.0",
+    "image": "patterns.webp",
+    "format": "RGBA8888",
+    "size": {
+      "w": 1774,
+      "h": 1084
+    },
+    "scale": "1"
+  }
+}

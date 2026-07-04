@@ -1,0 +1,11 @@
+{
+	"name": "cap_sort",
+	"short_name": "cap_sort",
+	"description": "10000 - Add JS Event\n10001 - Update popUp\n10002 - Fix size",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "portrait",
+	"background_color": "#ffffff",
+	"icons": [],
+	"screenshots": []
+}

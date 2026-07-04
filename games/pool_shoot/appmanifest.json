@@ -1,0 +1,11 @@
+{
+	"name": "pool_shoot",
+	"short_name": "pool_shoot",
+	"description": "10000 Add JS Event\n10001 Fix IOS Shoot",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "portrait",
+	"background_color": "#ffffff",
+	"icons": [],
+	"screenshots": []
+}

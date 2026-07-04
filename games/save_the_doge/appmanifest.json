@@ -1,0 +1,11 @@
+{
+	"name": "save_the_doge",
+	"short_name": "save_the_doge",
+	"description": "11000 - Update Js events\n11000 - Update Ads events\n11001 - fix bug with JsGameLoaded\n11002 - Update function JSevent_int\n11003 - Update JS event",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "portrait",
+	"background_color": "#ffffff",
+	"icons": [],
+	"screenshots": []
+}

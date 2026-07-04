@@ -1,0 +1,234 @@
+{
+  "frames": {
+    "arrow.png": {
+      "frame": {
+        "x": 1,
+        "y": 1,
+        "w": 93,
+        "h": 142
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 93,
+        "h": 142
+      },
+      "sourceSize": {
+        "w": 93,
+        "h": 142
+      }
+    },
+    "busters.png": {
+      "frame": {
+        "x": 96,
+        "y": 1,
+        "w": 480,
+        "h": 120
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 480,
+        "h": 120
+      },
+      "sourceSize": {
+        "w": 480,
+        "h": 120
+      }
+    },
+    "circle_white.png": {
+      "frame": {
+        "x": 578,
+        "y": 1,
+        "w": 33,
+        "h": 33
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 33,
+        "h": 33
+      },
+      "sourceSize": {
+        "w": 33,
+        "h": 33
+      }
+    },
+    "colors.png": {
+      "frame": {
+        "x": 613,
+        "y": 1,
+        "w": 480,
+        "h": 120
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 480,
+        "h": 120
+      },
+      "sourceSize": {
+        "w": 480,
+        "h": 120
+      }
+    },
+    "flower.png": {
+      "frame": {
+        "x": 96,
+        "y": 123,
+        "w": 350,
+        "h": 560
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 350,
+        "h": 560
+      },
+      "sourceSize": {
+        "w": 350,
+        "h": 560
+      }
+    },
+    "green_color.png": {
+      "frame": {
+        "x": 448,
+        "y": 123,
+        "w": 70,
+        "h": 70
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 70,
+        "h": 70
+      },
+      "sourceSize": {
+        "w": 70,
+        "h": 70
+      }
+    },
+    "hand.png": {
+      "frame": {
+        "x": 520,
+        "y": 123,
+        "w": 188,
+        "h": 196
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 188,
+        "h": 196
+      },
+      "sourceSize": {
+        "w": 188,
+        "h": 196
+      }
+    },
+    "red_color.png": {
+      "frame": {
+        "x": 710,
+        "y": 123,
+        "w": 70,
+        "h": 70
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 70,
+        "h": 70
+      },
+      "sourceSize": {
+        "w": 70,
+        "h": 70
+      }
+    },
+    "rules_color_splash.png": {
+      "frame": {
+        "x": 448,
+        "y": 321,
+        "w": 420,
+        "h": 420
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 420,
+        "h": 420
+      },
+      "sourceSize": {
+        "w": 420,
+        "h": 420
+      }
+    },
+    "rules_image.png": {
+      "frame": {
+        "x": 1095,
+        "y": 1,
+        "w": 683,
+        "h": 788
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 683,
+        "h": 788
+      },
+      "sourceSize": {
+        "w": 683,
+        "h": 788
+      }
+    },
+    "rules_magic_wand.png": {
+      "frame": {
+        "x": 1,
+        "y": 791,
+        "w": 490,
+        "h": 350
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 490,
+        "h": 350
+      },
+      "sourceSize": {
+        "w": 490,
+        "h": 350
+      }
+    }
+  },
+  "meta": {
+    "version": "1.0",
+    "image": "rules.png",
+    "format": "RGBA8888",
+    "size": {
+      "w": 1779,
+      "h": 1142
+    },
+    "scale": "1"
+  }
+}

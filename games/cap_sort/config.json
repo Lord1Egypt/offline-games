@@ -1,0 +1,72 @@
+{
+	"score_best" : 0,
+	"score_extra" : 5,
+	"cap_types" : [
+		{
+			"score_min" : 0,
+			"score_max" : 0,
+			"score_random" : 0,
+			"num_type" : 3
+		},
+		{
+			"score_min" : 300,
+			"score_max" : 400,
+			"score_random" : 0,
+			"num_type" : 4
+		},
+		{
+			"score_min" : 600,
+			"score_max" : 700,
+			"score_random" : 0,
+			"num_type" : 5
+		},
+		{
+			"score_min" : 1000,
+			"score_max" : 1100,
+			"score_random" : 0,
+			"num_type" : 6
+		},
+		{
+			"score_min" : 1300,
+			"score_max" : 1400,
+			"score_random" : 0,
+			"num_type" : 7
+		},
+		{
+			"score_min" : 1600,
+			"score_max" : 1700,
+			"score_random" : 0,
+			"num_type" : 8
+		},
+		{
+			"score_min" : 2000,
+			"score_max" : 2100,
+			"score_random" : 0,
+			"num_type" : 9
+		},
+		{
+			"score_min" : 2400,
+			"score_max" : 2500,
+			"score_random" : 0,
+			"num_type" : 10
+		},
+		{
+			"score_min" : 3000,
+			"score_max" : 3100,
+			"score_random" : 0,
+			"num_type" : 11
+		},
+		{
+			"score_min" : 4000,
+			"score_max" : 4100,
+			"score_random" : 0,
+			"num_type" : 12
+		},
+		{
+			"score_min" : 1000000000,
+			"score_max" : 10000000000,
+			"score_random" : 0,
+			"num_type" : 13
+		}
+	]
+}

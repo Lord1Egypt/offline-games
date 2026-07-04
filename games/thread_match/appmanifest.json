@@ -1,0 +1,11 @@
+{
+	"name": "thread_match",
+	"short_name": "thread_match",
+	"description": "10000 - add js event\n10020 - fix size img",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "portrait",
+	"background_color": "#ffffff",
+	"icons": [],
+	"screenshots": []
+}

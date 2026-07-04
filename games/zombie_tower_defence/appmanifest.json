@@ -1,0 +1,47 @@
+{
+	"name": "ZombieTowerDefense",
+	"short_name": "ZombieTowerDefense",
+	"description": "11000 - add JS Event. 11001 - Deleted the \"More games\" and \"credit\" buttons. 11003 - Changed the mode to Letterbox scale.11012 - Fix bag busters\n11100 - I added start acceleration buttons, the new level 0 on the map ate it up like a splint,\n\nI replaced the icon on the upgrade, now it’s noticeable that there is an upgrade\n11102 - Fix Bag \"is check\"\n11103 - Fix bag Button tutorial\n12001 - Add tutorial event + fix speed button\n12101 - Compress Music\n12201 - increased the size of the fade screen",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "portrait",
+	"background_color": "#ffffff",
+	"icons": [
+		{
+			"src": "icons/icon-16.png",
+			"sizes": "16x16",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-32.png",
+			"sizes": "32x32",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-64.png",
+			"sizes": "64x64",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-114.png",
+			"sizes": "114x114",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-128.png",
+			"sizes": "128x128",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-256.png",
+			"sizes": "256x256",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-512.png",
+			"sizes": "512x512",
+			"type": "image/png"
+		}
+	],
+	"screenshots": []
+}

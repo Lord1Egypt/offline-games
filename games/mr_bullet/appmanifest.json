@@ -1,0 +1,11 @@
+{
+	"name": "mr_bullet",
+	"short_name": "mr_bullet",
+	"description": "10000 - add js event\n10011 - fix levels\n10021 - change bg sound, bg",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "portrait",
+	"background_color": "#ffffff",
+	"icons": [],
+	"screenshots": []
+}

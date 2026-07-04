@@ -1,0 +1,11 @@
+{
+	"name": "screw_pin",
+	"short_name": "screw_pin",
+	"description": "10000 Add JS Events\n10001 - Fix size\n15003 - Added filling of several boxes.\n Added boosters: hole, hammer, magnet\n Updated graphics\n Added training\n Tickets added\n Added the lose level check\n Application Sound Detection\n\n15006 - fix bug new boxes, set color screw\n16101 - add function dell save",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "portrait",
+	"background_color": "#ffffff",
+	"icons": [],
+	"screenshots": []
+}

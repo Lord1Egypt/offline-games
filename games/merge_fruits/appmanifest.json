@@ -1,0 +1,11 @@
+{
+	"name": "merge_fruits",
+	"short_name": "merge_fruits",
+	"description": "10000 - add JS Event.\n11000 -Change Ads Popup JS Event. 11001 - Removed the list of events with unnecessary advert, removed plugin Mobile advert.\n11011 - Delete progress bar\n12000 - Add Reward logic and Progress logic\n12005 - Fix reward\n15001 - Add save game, gix progress line\n15011 - Compare global sound, fix bag (CONSTR-169)\n15012 - Fix icons position\n15013 - Add new music\n15014 - fix save",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "portrait",
+	"background_color": "#000000",
+	"icons": [],
+	"screenshots": []
+}

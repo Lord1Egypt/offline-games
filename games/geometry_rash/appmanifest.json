@@ -1,0 +1,11 @@
+{
+	"name": "roblo_dash",
+	"short_name": "roblo_dash",
+	"description": "11010 - fixed level design                                    11010 - Fixed problem with saving\n11020 - Change user icon RobloDash + min music",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "any",
+	"background_color": "#ffffff",
+	"icons": [],
+	"screenshots": []
+}

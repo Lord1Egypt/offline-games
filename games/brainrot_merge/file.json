@@ -1,0 +1,33 @@
+{
+	"sound": 					1,
+
+	"sound_app": 				1,
+	
+	"music": 					1,	
+
+	"music_app": 				1,
+	
+	"score": 					0,
+
+	"coins": 					0,
+	
+	"best": 					0,
+	
+	"is_save": 					"off",
+	
+
+	"__busters___": "___busters__ >= 0 значит бустер открыт, -1 - бустер еще не открыт",
+
+
+	"upgrade":					-1,
+	"bomb":						-1,
+	"small": 					-1,
+	"shake":					-1,
+
+
+	"reward_progress": [0,0,1,1,1,1,1,1,1,1,1,1]
+		
+	
+	
+	
+}

@@ -1,0 +1,11 @@
+{
+	"name": "merge_shooter",
+	"short_name": "merge_shooter",
+	"description": "10101 - Add new button shop\n11001 - All New low animation\n12001 - Add new monster levels and wall levels\n12003 - New save and load\n12003 - New save and load, add Boss, add gun effect, add bonus atack, optimized graphics, removed animations, replaced with twin, optimized object collision\n12006 - Updating the appearance of the effects buttons, added animations for attacking bosses\n20001 - Fix naming superskill, boss attack - change\n\n20002 - add global sound\n20101 - fix gun 20 not shooting",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "portrait",
+	"background_color": "#ffffff",
+	"icons": [],
+	"screenshots": []
+}

@@ -1,0 +1,11 @@
+{
+	"name": "coin_sort",
+	"short_name": "coin_sort",
+	"description": "10000 - Add js Event\n10103 - add buster: move, shuffle\n10203 - change gb sound, dell animation coins down and left\n11203 - fix type spwan coins\n11213 - fix size img",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "portrait",
+	"background_color": "#ffffff",
+	"icons": [],
+	"screenshots": []
+}

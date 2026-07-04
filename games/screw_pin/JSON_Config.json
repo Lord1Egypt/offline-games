@@ -1,0 +1,21 @@
+{
+	"sound":			1,
+	
+	"level_unlock" : 	1,
+
+	"level_total" : 	55,
+
+	"tutorial": 		"on",
+
+	"tutorial_buster": 	"on",
+
+	"tickets":			0,
+
+
+	"holl":				-1,
+	"hamer":			-1,
+	"magnit":			-1
+
+	
+
+}

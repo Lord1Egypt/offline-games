@@ -1,0 +1,11 @@
+{
+	"name": "fruits_match_2",
+	"short_name": "fruits_match_2",
+	"description": "10001 - add js event, fix bug shuffle, fix bug compere fruits",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "portrait",
+	"background_color": "#ffffff",
+	"icons": [],
+	"screenshots": []
+}
