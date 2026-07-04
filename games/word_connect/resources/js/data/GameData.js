@@ -28,7 +28,7 @@ class GameData{
         if(scene.cache.text.has(GameData.KEY_WORDS_CACHE)){
             GameData.parseWords(scene);
         }else{
-            let fileName = wordPressParams.resourcePath + "resources/assets/data/" + Language.getCode() + "/words.txt";
+            let fileName = wordPressParams.resourcePath + "resources/assets/data/" + Language.getCode() + "resources/assets/data/es/words.txt";
         
             scene.load.text(GameData.KEY_WORDS_CACHE, fileName);
             scene.load.once('complete', function(){
@@ -59,7 +59,7 @@ class GameData{
         if(scene.cache.text.has(GameData.KEY_VULGAR_CACHE)){
             GameData.parseVulgarWords(scene);
         }else{
-            let fileName = wordPressParams.resourcePath + "resources/assets/data/" + Language.getCode() + "/vulgar.txt";
+            let fileName = wordPressParams.resourcePath + "resources/assets/data/" + Language.getCode() + "resources/assets/data/es/vulgar.txt";
         
             scene.load.text(GameData.KEY_VULGAR_CACHE, fileName);
             scene.load.once('complete', function(){
@@ -83,7 +83,7 @@ class GameData{
         if(scene.cache.json.has(GameData.KEY_STRINGS)){
             GameData.parseStringsFile(scene);
         }else{
-            let fileName = wordPressParams.resourcePath + "assets/data/" + Language.getCode() + "/strings.json"
+            let fileName = wordPressParams.resourcePath + "assets/data/" + Language.getCode() + "resources/assets/data/es/strings.json"
             scene.load.json(GameData.KEY_STRINGS, fileName);
             scene.load.once('complete', function(){
                 GameData.parseStringsFile(scene, callback);

@@ -26,8 +26,8 @@ class PreloadScene extends Phaser.Scene{
 
         this.load.image("well_done_" + Language.getCode(), path + "resources/assets/textures/well_done.png");
         this.load.image("logo_" + Language.getCode(), path + "resources/assets/textures/logo.png");
-        // this.load.image("well_done_" + Language.getCode(), path + "resources/assets/textures/" + Language.getCode() + "/well_done.png");
-        // this.load.image("logo_" + Language.getCode(), path + "resources/assets/textures/" + Language.getCode() + "/logo.png");
+        // this.load.image("well_done_" + Language.getCode(), path + "resources/assets/textures/" + Language.getCode() + "resources/assets/textures/well_done.png");
+        // this.load.image("logo_" + Language.getCode(), path + "resources/assets/textures/" + Language.getCode() + "resources/assets/textures/logo.png");
         
         this.load.image("background", path + "resources/assets/textures/background.jpg");
 
@@ -39,9 +39,9 @@ class PreloadScene extends Phaser.Scene{
         this.load.audioSprite('sfx', path + 'resources/assets/audio/gameaudio.json', [path + 'resources/assets/audio/gameaudio.ogg']);
         this.load.audio('music', [path + 'resources/assets/audio/music.ogg']);
         
-        this.load.json(GameData.KEY_STRINGS, path + "resources/assets/data/" + Language.getCode() + "/strings.json");
-        this.load.text(GameData.KEY_WORDS_CACHE, path + "resources/assets/data/" + Language.getCode() + "/words.txt")
-        this.load.text(GameData.KEY_VULGAR_CACHE, path + "resources/assets/data/" + Language.getCode() + "/vulgar.txt");
+        this.load.json(GameData.KEY_STRINGS, path + "resources/assets/data/" + Language.getCode() + "resources/assets/data/es/strings.json");
+        this.load.text(GameData.KEY_WORDS_CACHE, path + "resources/assets/data/" + Language.getCode() + "resources/assets/data/es/words.txt")
+        this.load.text(GameData.KEY_VULGAR_CACHE, path + "resources/assets/data/" + Language.getCode() + "resources/assets/data/es/vulgar.txt");
     }
 
 

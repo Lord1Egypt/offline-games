@@ -27,7 +27,7 @@ var TEXT_WINNER = "WINNER!";
 var TEXT_PLAYER_WON ="%s WON THE GAME!";
 
 
-var TEXT_SHARE_IMAGE = "200x200.jpg";
+var TEXT_SHARE_IMAGE = "sprites/200x200.jpg";
 var TEXT_SHARE_TITLE = "Congratulations!";
 var TEXT_SHARE_MSG1 = "You collected <strong>";
 var TEXT_SHARE_MSG2 = " points</strong>!<br><br>Share your score with your friends!";
@@ -66,7 +66,7 @@ if(userLang=="ru-RU"){
     TEXT_PLAYER_WON ="%s ВЫИГРАЛ ИГРУ!";
    
    
-    TEXT_SHARE_IMAGE = "200x200.jpg";
+    TEXT_SHARE_IMAGE = "sprites/200x200.jpg";
     TEXT_SHARE_TITLE = "Поздравляем!";
     TEXT_SHARE_MSG1 = "Вы собрали <strong>";
     TEXT_SHARE_MSG2 = " баллы</strong>!<br><br>Поделитесь своим счетом с друзьями!";

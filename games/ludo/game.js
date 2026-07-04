@@ -4,62 +4,62 @@ var c =null;
 window.main = {
 	sprites: {
 		settings_bgs: {
-			path: "backgrounds.png",
+			path: "img/backgrounds.png",
 			w: 63,
 			h: 61
 		},
 		icons_bottom: {
-			path: "bottombar.png",
+			path: "img/bottombar.png",
 			w: 39,
 			h: 42
 		},
 		icons_menu: {
-			path: "hraci.png",
+			path: "img/hraci.png",
 			w: 74,
 			h: 56
 		},
 		die: {
-			path: "kocka.png",
+			path: "img/kocka.png",
 			w: 89,
 			h: 89
 		},
 		die_anim: {
-			path: "kockaanim.png",
+			path: "img/kockaanim.png",
 			w: 134,
 			h: 134
 		},
 		die_bg: {
-			path: "menovky.png",
+			path: "img/menovky.png",
 			w: 149,
 			h: 176
 		},
 		settings_checkbox: {
-			path: "onoff.png",
+			path: "img/onoff.png",
 			w: 63,
 			h: 61
 		},
 		tokens: {
-			path: "panaci.png",
+			path: "img/panaci.png",
 			w: 30,
 			h: 39
 		},
 		particles: {
-			path: "particle.png",
+			path: "img/particle.png",
 			w: 22,
 			h: 22
 		},
 		btns_pause: {
-			path: "pause.png",
+			path: "img/pause.png",
 			w: 40,
 			h: 38
 		},
 		trophy_ingame: {
-			path: "trophy-ingame.png",
+			path: "img/trophy-ingame.png",
 			w: 124,
 			h: 131
 		},
 		trophy_result: {
-			path: "trophy-result.png",
+			path: "img/trophy-result.png",
 			w: 102,
 			h: 118
 		}

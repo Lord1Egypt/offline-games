@@ -65,8 +65,8 @@ class Load extends Phaser.Scene {
 		this.load.audio('gameover', 'audio/gameover.mp3');
 		//Load spine animation
 		this.load.setPath('spine');
-		this.load.spine('good', 'good.json', 'good.atlas');
-		this.load.spine('perfect', 'perfect.json', 'perfect.atlas');
+		this.load.spine('good', 'spine/good.json', 'spine/good.atlas');
+		this.load.spine('perfect', 'spine/perfect.json', 'spine/perfect.atlas');
 		
 	}
 }
