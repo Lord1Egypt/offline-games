@@ -1,4 +1,3 @@
-# Don't track extracted game assets in a separate place
 *.apk
 *.xapk
 *.zip.gz

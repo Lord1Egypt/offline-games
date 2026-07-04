@@ -2,7 +2,7 @@
 
 **99 free HTML5 games — Play anywhere, anytime, no internet needed.**
 
-A hand-picked collection of premium HTML5 games extracted from a mobile app. Zero ads, zero tracking, 100% free.
+A curated collection of premium HTML5 games. Zero ads, zero tracking, 100% free.
 
 ## ✨ Features
 
@@ -38,10 +38,6 @@ A hand-picked collection of premium HTML5 games extracted from a mobile app. Zer
 - Construct 3 & Cocos2d games
 - Hosted on GitHub Pages
 - No frameworks, no build tools
-
-## 📜 License
-
-The games are extracted from a freely available APK. If you are the original author and want attribution or removal, please open an issue.
 
 ## 🤝 Contribute
 
